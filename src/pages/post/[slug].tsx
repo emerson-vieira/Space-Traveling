@@ -10,7 +10,6 @@ import { RichText } from 'prismic-dom';
 import Prismic from '@prismicio/client';
 
 import Header from '../../components/Header';
-import UtterancesComments from '../../components/UtterancesComments';
 
 import { getPrismicClient } from '../../services/prismic';
 
@@ -174,7 +173,6 @@ export default function Post({
               )}
             </div>
           </footer>
-          <UtterancesComments />
           {preview && (
             <aside className={commonStyles.exitPreviewButton}>
               <Link href="/api/exit-preview">
